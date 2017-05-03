@@ -1,0 +1,39 @@
+{
+  "name": "Cleverbutts",
+  "version": "1.0.0",
+  "description": "Discord bots talking to each other",
+  "author": "Cleverbutts Contributers",
+  "private": false,
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-builder": "8.4.1"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "cleverbot-node": "^0.2.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "eris": "abalabahaha/eris#master",
+    "mkdirp": "^0.5.1",
+    "open": "0.0.5",
+    "request": "^2.79.0"
+  },
+  "build": {
+    "appId": "cf.cleverbutts.cleverbuttsSetup",
+    "win": {
+      "target": "squirrel",
+      "iconURL": "https://cleverbutts.cf/assets/images/logo.ico"
+    },
+    "mac": {
+      "target": "default",
+      "category": "public.app-category.developer-tools"
+    }
+  }
+}
